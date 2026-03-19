@@ -58,7 +58,7 @@ jobs:
   deploy-self-hosted:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     needs: build-and-test
-    runs-on: Agent007
+    runs-on: self-hosted
     environment:
       name: production
 

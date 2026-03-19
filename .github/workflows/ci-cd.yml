@@ -59,7 +59,7 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     needs: build-and-test
     runs-on:
-      - self-hosted
+      - Agent007
       - linux
       - python-app
     environment:

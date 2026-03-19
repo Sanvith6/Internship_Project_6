@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python CI/CD Demo</title>
+    <style>
+      :root {
+        --bg: #f7f3ea;
+        --card: #fffdf8;
+        --text: #23313a;
+        --accent: #b85c38;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Georgia, serif;
+        background: linear-gradient(135deg, #efe0c8, var(--bg));
+        color: var(--text);
+      }
+
+      main {
+        width: min(720px, calc(100vw - 2rem));
+        padding: 3rem;
+        border-radius: 24px;
+        background: var(--card);
+        box-shadow: 0 24px 48px rgba(35, 49, 58, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.4rem, 7vw, 4.5rem);
+        line-height: 0.95;
+      }
+
+      p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      strong {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Python CI/CD demo is live.</h1>
+      <p>
+        This small Python app exists to show a complete pipeline that can
+        <strong>build</strong>, <strong>test</strong>, and <strong>deploy</strong>
+        with as little project overhead as possible.
+      </p>
+    </main>
+  </body>
+</html>
